@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Note = mongoose.model('Note');
+const Note = require('../models/Note');
 
 exports.notesForm = (req, res) => {
     res.render('notes/new-note')
